@@ -1,14 +1,13 @@
 <template>
- <div>Extemp Relief</div>
+  <div>
+  <div>Extemp Relief</div>
+  <div>"Life made easy"</div>
+
+  </div>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
-}
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

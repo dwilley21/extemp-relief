@@ -1,17 +1,30 @@
 <template>
   <div id="app">
-  
-    <HelloWorld />
+    <Main />
+    <About />
+    <Shop />
+    <Testimonals />
+    <FAQ />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Main from './components/Main.vue'
+import About from './components/About.vue'
+import Shop from './components/Shop.vue'
+import Testimonals from './components/Testimonals.vue'
+import FAQ from './components/FAQ.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Main,
+    About, 
+    Shop,
+    Testimonals,
+    FAQ
+
   }
 }
 </script>
