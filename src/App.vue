@@ -1,41 +1,26 @@
 <template>
   <div id="app">
-    <Main />
-    <About />
-    <Shop />
-    <Testimonals />
-    <FAQ />
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> |
+      <router-link to="/FAQ">FAQ</router-link> |
+      <router-link to="/shop">Shop</router-link> |
+      <router-link to="/testimonials">Testimonials</router-link> |
+    </div>
+    <router-view/>
   </div>
 </template>
 
-<script>
-import Main from './components/Main.vue'
-import About from './components/About.vue'
-import Shop from './components/Shop.vue'
-import Testimonals from './components/Testimonals.vue'
-import FAQ from './components/FAQ.vue'
-
-
-export default {
-  name: 'App',
-  components: {
-    Main,
-    About, 
-    Shop,
-    Testimonals,
-    FAQ
-
-  }
-}
-</script>
-
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
+
+#nav {
+  padding: 30px;
+}
+#nav a {
+  font-weight: bold;
   color: #2c3e50;
-  margin-top: 60px;
+}
+#nav a.router-link-exact-active {
+  color: #42b983;
 }
 </style>
